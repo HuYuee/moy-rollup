@@ -4,7 +4,9 @@
   "description": "使用rollup对moy框架进行打包，和webpack打包进行对比",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c -w"
+      "dev": "rollup -c --environment TYPE:dev",
+      "build": "rollup -c --environment TYPE:build",
+    "product": "npm run build && npm run dev"
   },
   "repository": {
     "type": "git",
