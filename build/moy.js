@@ -1,6 +1,5 @@
+(function (exports) {
 'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
 
 /**
  * Module : Sparrow extend enum
@@ -24133,3 +24132,5 @@ window.u = ex$2;
 
 exports.u = u;
 exports.DataTable = DataTable$1;
+
+}((this.bar = this.bar || {})));

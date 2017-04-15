@@ -1,9 +1,8 @@
-import resolve from 'rollup-plugin-node-resolve';
-import babel from 'rollup-plugin-babel';
-import uglify from 'rollup-plugin-uglify';
+import resolve from "rollup-plugin-node-resolve";
+import babel from "rollup-plugin-babel";
+import uglify from "rollup-plugin-uglify";
 
-var type = process.env.TYPE,
-    config = {};
+var type = process.env.TYPE, config = {};
 if (type && type === "build") {
     config = {
         dest: "build/moy.min.js",
@@ -13,28 +12,26 @@ if (type && type === "build") {
             }),
             uglify(),
             babel({
-                exclude: 'node_modules/**' // only transpile our source code
-            }),
+                exclude: "node_modules/**" // only transpile our source code
+            })
         ]
-    }
+    };
 } else {
     config = {
         dest: "build/moy.js",
         plugins: [
-            resolve({
-                jail: "/",
-                jsnext: true,
-            }),
+            resolve(),
             babel({
-                exclude: 'node_modules/**' // only transpile our source code
-            }),
+                exclude: "node_modules/**" // only transpile our source code
+            })
         ]
-    }
+    };
 }
 
 export default {
-    entry: 'src/moy.js',
-    format: 'cjs',
+    entry: "src/moy.js",
+    format: "iife",
+    moduleName: "bar",
     plugins: config.plugins,
     dest: config.dest
 };
