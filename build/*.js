@@ -1,5 +1,11 @@
-(function (exports) {
+(function () {
 'use strict';
+
+var x = function x() {
+    console.log('xxx');
+};
+
+x();
 
 /**
  * Module : Sparrow extend enum
@@ -24130,7 +24136,4 @@ var ex$2 = {
 extend(ex$2, window.u || {});
 window.u = ex$2;
 
-exports.u = u;
-exports.DataTable = DataTable$1;
-
-}((this.bar = this.bar || {})));
+}());
