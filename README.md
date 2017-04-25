@@ -4,3 +4,5 @@
 ## 体积比较
 不使用压缩的前提：rollup打包出来的比webpack的少大概120kb
 使用压缩的前提：rollup打包出来的比webpack的少大概30kb
+
+[使用总结](https://github.com/HuYuee/blog/issues/21)
