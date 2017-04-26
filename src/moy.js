@@ -1,1 +1,7 @@
-import {DataTable, u as kero} from 'kero/src/index';
+import {DataTable} from 'kero/src/index';
+
+
+export {
+	u,
+	DataTable
+};
