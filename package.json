@@ -4,10 +4,9 @@
   "description": "使用rollup对moy框架进行打包，和webpack打包进行对比",
   "main": "index.js",
   "scripts": {
-    "dev": "rollup -c --environment TYPE:dev",
-    "build": "rollup -c --environment TYPE:build",
-    "upgrade": "npm uninstall tinper-sparrow compox compox-util tinper-neoui neoui-kero-mixin kero kero-fetch tinper-neoui-grid tinper-neoui-tree tinper-neoui-polyfill neoui-kero && npm install tinper-sparrow compox compox-util tinper-neoui neoui-kero-mixin kero kero-fetch tinper-neoui-grid tinper-neoui-tree tinper-neoui-polyfill neoui-kero --save",
-    "product": "npm run build && npm run dev"
+    "watch": "rollup -c -w",
+    "build": "rollup -c ",
+    "upgrade": "npm uninstall tinper-sparrow compox compox-util tinper-neoui neoui-kero-mixin kero kero-fetch tinper-neoui-grid tinper-neoui-tree tinper-neoui-polyfill neoui-kero && npm install tinper-sparrow compox compox-util tinper-neoui neoui-kero-mixin kero kero-fetch tinper-neoui-grid tinper-neoui-tree tinper-neoui-polyfill neoui-kero --save"
   },
   "repository": {
     "type": "git",
@@ -36,12 +35,12 @@
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-latest": "^6.24.1",
     "rollup-plugin-babel": "^2.7.1",
-    "rollup-plugin-livereload": "^0.4.0",
+    "rollup-plugin-license": "^0.3.0",
     "rollup-plugin-multi-entry": "^2.0.1",
     "rollup-plugin-multidest": "^1.0.1",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-serve": "^0.3.0",
-    "rollup-plugin-uglify": "^1.0.1",
-    "rollup-watch": "^3.2.2"
+    "rollup-plugin-uglify": "^1.0.2",
+    "rollup-watch": "^3.2.2",
+    "uglify-js-harmony": "^2.7.5"
   }
 }
