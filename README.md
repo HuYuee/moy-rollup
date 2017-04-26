@@ -5,7 +5,6 @@
 **特别声明**：如果你的工作内容是基于es2015（也就是es6），并且不需要[代码分割](https://webpack.toobug.net/zh-cn/chapter3/chunks.html)，也不需要[模块热替换（HMR)][https://webpack.js.org/concepts/hot-module-replacement/]，那么你可以很愉快的使用rollup进行开发了。不然，建议使用gulp+rollup。
 
 
-
 ## 优势（与webpack相比）
 
 - 代码的内容格式：编译运行出来的内容，人能看，并且能调试。如果你没办法理解我说的话，可以去看看webpack打包出来的代码
