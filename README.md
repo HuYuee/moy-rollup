@@ -5,7 +5,7 @@
 不使用压缩的前提：rollup打包出来的比webpack的少大概120kb
 使用压缩的前提：rollup打包出来的比webpack的少大概30kb
 
-**特别声明**：如果你的工作内容是基于es2015（也就是es6），并且不需要[代码分割](https://webpack.toobug.net/zh-cn/chapter3/chunks.html)，也不需要[模块热替换（HMR)][https://webpack.js.org/concepts/hot-module-replacement/]，那么你可以很愉快的使用rollup进行开发了。否则，你可以绕行[webpack](https://webpack.js.org/)了。
+**特别声明**：如果你的工作内容是基于es2015（也就是es6），并且不需要[代码分割](https://webpack.toobug.net/zh-cn/chapter3/chunks.html)，也不需要[模块热替换（HMR)](https://webpack.js.org/concepts/hot-module-replacement/)，那么你可以很愉快的使用rollup进行开发了。否则，你可以绕行[webpack](https://webpack.js.org/)了。
 
 ## 优势（与webpack相比）
 
