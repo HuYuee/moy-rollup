@@ -2,8 +2,8 @@
 
 [rollup官网](https://rollupjs.org/)
 
-**特别声明**：如果你的工作内容是基于es2015（也就是es6），并且不需要[代码分割](https://webpack.toobug.net/zh-cn/chapter3/chunks.html)，也不需要[模块热替换（HMR)][https://webpack.js.org/concepts/hot-module-replacement/]，那么你可以很愉快的使用rollup进行开发了。不然，建议使用gulp+rollup。
-
+**特别声明**：
+> 如果你的工作内容是基于es2015（也就是es6），并且不需要[代码分割](https://webpack.toobug.net/zh-cn/chapter3/chunks.html)，也不需要[模块热替换（HMR)](https://webpack.js.org/concepts/hot-module-replacement/)，那么你可以很愉快的使用rollup进行开发了。不然，建议使用gulp+rollup。让gulp去解决那些问题。
 
 ## 优势（与webpack相比）
 
@@ -61,11 +61,7 @@
 
   你可以使用"uglify-js-harmony"这个库配合"rollup-plugin-uglify"使用，我在项目也详细使用到了。
 
-  参考地址:
-
-  [rollup-plugin-uglify](https://www.npmjs.com/package/rollup-plugin-uglify)
-
-  [issues地址](https://github.com/TrySound/rollup-plugin-uglify/issues/13)
+  问题解决地址:[rollup-plugin-uglify](https://www.npmjs.com/package/rollup-plugin-uglify)   [issues地址](https://github.com/TrySound/rollup-plugin-uglify/issues/13)
 
 
 
