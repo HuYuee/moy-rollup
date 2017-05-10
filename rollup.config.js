@@ -1,5 +1,5 @@
 import babel from "rollup-plugin-babel";
-import multidest from "rollup-plugin-multidest";
+import multidest from "rollup-plugin-multi-dest";
 import nodeResolve from "rollup-plugin-node-resolve";
 import uglify from "rollup-plugin-uglify";
 import license from "rollup-plugin-license";
@@ -8,7 +8,7 @@ import { minify } from 'uglify-js-harmony';
 export default {
     entry: "src/moy.js",
     dest: "dist/moy.js",
-    format: "iife",
+    format: "umd",
     moduleName: "bar",
     plugins: [
         license({

@@ -6,8 +6,11 @@
  * bugs : https://github.com/HuYuee/moy-rollup/issues
  */
 
-(function (exports) {
-'use strict';
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.bar = global.bar || {})));
+}(this, (function (exports) { 'use strict';
 
 /**
  * Module : Sparrow extend enum
@@ -13528,7 +13531,7 @@ const ClockPicker = u.BaseComponent.extend({
         this.format = this.options['format'] || core.getMaskerMeta('time').format;
         this.panelDiv = null;
         this.input = this.element.querySelector("input");
-        if (env$1.isMobile) {
+        if (isMobile) {
             this.input.setAttribute('readonly', 'readonly');
         }
         addClass(this.element, 'u-text');
@@ -13644,7 +13647,7 @@ const ClockPicker = u.BaseComponent.extend({
         this.hourDiv = this.panelDiv.querySelector('.clockpicker-hours');
         this.minDiv = this.panelDiv.querySelector('.clockpicker-minutes');
         this.btnClean = this.panelDiv.querySelector('.u-date-clean');
-        if (!env$1.isMobile)
+        if (!isMobile)
             this.btnClean.style.display = 'none';
         this.currentView = 'hours';
         on$1(this.hourDiv, 'click', function(e) {
@@ -13864,7 +13867,7 @@ const ClockPicker = u.BaseComponent.extend({
         this.titleMinSpan.innerHTML = this.min;
 
         /*因为元素可能变化位置，所以显示的时候需要重新计算*/
-        if (env$1.isMobile) {
+        if (isMobile) {
             this.panelDiv.style.position = 'fixed';
             this.panelDiv.style.top = '20%';
             var screenW = document.body.clientWidth;
@@ -14628,7 +14631,7 @@ const YearMonth = u.BaseComponent.extend({
         }
         addClass(newPage, 'zoom-in');
         this.panelContentDiv.appendChild(newPage);
-        if (env$1.isIE8) {
+        if (isIE8) {
             this.contentPage = newPage;
         } else {
             var cleanup = function() {
@@ -15000,7 +15003,7 @@ const MonthDate = u.BaseComponent.extend({
         }
         addClass(newPage, 'zoom-in');
         this.panelContentDiv.appendChild(newPage);
-        if (env$1.isIE8) {
+        if (isIE8) {
             this.contentPage = newPage;
         } else {
             var cleanup = function() {
@@ -25601,4 +25604,6 @@ window.u = ex$2;
 exports.u = u;
 exports.DataTable = DataTable$1;
 
-}((this.bar = this.bar || {})));
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
